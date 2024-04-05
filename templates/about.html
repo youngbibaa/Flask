@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>О нас</h1>
+        <p>Мы компания, занимающаяся созданием удивительных веб-сайтов и приложений.</p>
+        <h2>Наша миссия</h2>
+        <p>Мы стремимся создавать качественные и инновационные продукты, которые помогают нашим клиентам достигать своих целей в Интернете.</p>
+        <h2>Наши услуги</h2>
+        <ul>
+            <li>Разработка веб-сайтов</li>
+            <li>Разработка мобильных приложений</li>
+            <li>Дизайн пользовательского интерфейса</li>
+            <li>Консалтинг по веб-технологиям</li>
+        </ul>
+        <p>Свяжитесь с нами, чтобы узнать больше о том, как мы можем помочь вашему бизнесу.</p>
+        <div style="text-align: center;">
+            <a href="{{url_for('contact')}}" class="btn">Контакты</a>
+        </div>
+    </div>
+</body>
+</html>

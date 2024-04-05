@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css')}}">
+</head>
+<body>
+    <div class="container">
+        <h1>Свяжитесь с нами</h1>
+        <p>Если у вас есть вопросы или предложения, пожалуйста, заполните форму ниже и мы с вами свяжемся.</p>
+        <form action="http://192.168.1.205:5000/contact" method="get">
+            <input type="text" name="name" placeholder="Ваше имя" required>
+            <br>
+            <input type="text" name="email" placeholder="Ваш Email" required>
+            <br>
+            <textarea name="message" rows="5" placeholder="Ваше сообщение" required></textarea>
+            <br>
+            <input type="submit" value="Отправить">
+        </form>
+    </div>
+</body>
+</html>
